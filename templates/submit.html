@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        /* Style for the box container */
+        .box-container {
+            background-color: rgba(0, 255, 0, 0.5); /* Change background color to green */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Style for the h2 element */
+        .box-container h2 {
+            color: white;
+            margin: 0;
+            transition: transform 0.3s ease; /* Add transition effect for transform property */
+        }
+
+        /* Hover effect for the h2 element */
+        .box-container h2:hover {
+            transform: scale(1.1); /* Zoom in effect on hover */
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-image: url('../static/assets/pik.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: center;">
+        <div class="box-container">
+            <h1 style="color: black;">{{ Input }}</h1>
+            <p id="outputText" style="font-size: 24px; color: red;">{{ Output }}</p>
+        </div>
+    </div>
+</body>
+</html>
